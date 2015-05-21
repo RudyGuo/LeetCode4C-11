@@ -7,19 +7,14 @@
 #include <iostream>
 #include<vector>
 #include<string>
-#include"3Sum.h"
+#include"3Sum Closest.h"
 using namespace std;
 int main(){
 	Solution so;
-	vector<int> vc = {1,1,1};
-	vector<vector<int>> res = so.threeSum(vc);
-	cout<<res.size()<<endl;
-	for(vector<int> tmp:res){
-		for(auto it:tmp){
-			cout<<it<<" ";
-		}
-		cout<<endl;
-	}
+	vector<int> vc = {-1 ,2, 1 ,-4};
+	cout<<so.threeSumClosest(vc,1)<<endl;
+
+
 	return 0;
 }
 
